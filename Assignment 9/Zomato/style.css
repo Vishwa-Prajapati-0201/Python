@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Style for header section */
+header {
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for better text visibility */
+}
+
+/* Background image */
+.header-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Full screen height */
+    z-index: -1;  /* To send it behind other content */
+    background-image: url("zomato-main-pic.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Navigation bar */
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10vw;
+    background-color: rgba(0, 0, 0, 0.8); /* Added background */
+    color: white;
+    z-index: 1000;
+}
+
+.nav h4 {
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-bar li {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-bar li:hover {
+    color: red;
+}
+
+/* Logo */
+.logo {
+    display: block;
+    width: auto;
+    max-width: 200px;
+    height: auto; 
+    margin: 0 auto;
+}
+
+/* Header text */
+.head h3 {
+    font-size: 2.1em;
+    color: whitesmoke;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Search bar styling */
+.search {
+    display: flex;
+    width: 55vw;
+    max-width: 600px;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search input {
+    outline: none;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.search p {
+    color: grey;
+    border-right: 1px solid grey;
+    font-size: 15px;
+    padding-right: 10px;
+    white-space: nowrap;
+}
+
+.search i {
+    color: grey;
+    padding-left: 10px;
+}
+
+.search i:first-child {
+    font-size: 20px;
+    color: rgb(252, 119, 119);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* Image styling */
+.image {
+    margin: 10px;
+    border: 1px solid #ccc;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.image:hover {
+    transform: scale(1.05);
+    border: 1px solid #777;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.allimages {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.desc {
+    text-align: center;
+    font-weight: bold;
+}

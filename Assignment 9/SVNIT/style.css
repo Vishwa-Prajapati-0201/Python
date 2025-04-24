@@ -1,0 +1,77 @@
+h1{
+    text-align: center;
+}
+#i1{
+    height: 120px;
+    width: auto;
+    margin-left: 5px;
+}
+#i3{
+    height: 120px;
+    width: auto;
+}
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    background-color: rgb(9, 147, 194);
+    overflow: hidden;
+    padding: 20px;
+    margin: 10px;
+    height: 20px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+nav a:hover{
+    background-color: white;
+    color: rgb(9, 147, 194);
+
+}
+.content{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container1,.container3{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+#i2{
+    height: auto;
+    width: 100%;
+}
+
+button{
+    margin: 3px;
+    background-color: rgb(117, 205, 234);
+    border-color: white;
+    cursor: pointer;
+    padding: 5px;
+    width: 100%;
+    text-decoration: solid;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+}
+#i4{
+    height: 70px;
+    width: auto;
+    padding: 20px;
+}
